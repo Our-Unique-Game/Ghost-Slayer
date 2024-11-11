@@ -40,12 +40,14 @@ Use screenshots to illustrate your answers.
 
 * Stun ghosts briefly but cannot defeat them.
 * Each room’s lights must be activated.
+* there is a totorial in the begining of the game that describe the game rules.
 
 
 ### 5. Resources
 
 * Health: Lost when attacked, partially recoverable through items.
 * Stun Power: Limited but gradually replenishes.
+* the player will have an inventory of his tools and items.
 
 ### 6. Conflicts
 
@@ -55,6 +57,7 @@ Use screenshots to illustrate your answers.
 ### 7. Boundaries
 
 * Game Boundaries: The village limits player movement, each house containing unique challenges.
+* the player wont be able to leave the village in the game. 
 
 
 ### 8. Outcomes
