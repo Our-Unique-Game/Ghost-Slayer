@@ -65,6 +65,11 @@ Use screenshots to illustrate your answers.
 
 ## Market Research
 
-Conduct a search to confirm that similar games don’t already exist. Identify the three most similar games with a link and screenshot for each.
+the closest games we found are:
+*Ghost Invasion: Idle Hunter
+*Haunted Castle - Ghost Game
+*Granny
 
-Explain how your game will differ, be unique, or more appealing compared to the competition, and why players would prefer it. Specify which formal components will highlight your game’s uniqueness against existing games.
+we search not only with simillar name to our game but also simillar patterns and rules of our game. 
+those games has a simillar to out game but our game is diffrent while we use speacial features like lights and stun the ghosts and a diffrent way to end the game.
+the players will prefer our game because he is more exciting and with more intrest to complete the game.
