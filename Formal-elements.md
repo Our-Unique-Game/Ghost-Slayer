@@ -60,6 +60,7 @@ Use screenshots to illustrate your answers.
 ### 8. Outcomes
 
 * Success upon activating all lights, failure if health is depleted.
+* needed skill and slightly of luck
 
 ---
 
