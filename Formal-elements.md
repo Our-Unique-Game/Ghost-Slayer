@@ -8,7 +8,7 @@ Players roam through a haunted village, entering houses to find hidden light swi
 
 Platform: PC (Unity)
 
-*** Insert a screenshot illustrating the game as you envision it.
+<img title="a title" alt="Alt text" src="/images/game-cover.png">
 
 ---
 
