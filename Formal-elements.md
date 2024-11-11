@@ -66,9 +66,9 @@ Use screenshots to illustrate your answers.
 ## Market Research
 
 the closest games we found are:
-*Ghost Invasion: Idle Hunter
-*Haunted Castle - Ghost Game
-*Granny
+* Ghost Invasion: Idle Hunter
+* Haunted Castle - Ghost Game
+* Granny
 
 we search not only with simillar name to our game but also simillar patterns and rules of our game. 
 those games has a simillar to out game but our game is diffrent while we use speacial features like lights and stun the ghosts and a diffrent way to end the game.
