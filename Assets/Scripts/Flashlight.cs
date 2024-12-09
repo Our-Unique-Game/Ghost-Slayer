@@ -44,8 +44,17 @@ public class Flashlight : MonoBehaviour
 
     private void FireFlashlight()
     {
+        Debug.Log("Firing flashlight...");
+        
         // Instantiate the flashlight beam
         GameObject flashlight = Instantiate(flashlightPrefab, transform.position, Quaternion.identity);
+
+        // Ensure flashlight is instantiated
+        if (flashlight == null)
+        {
+            Debug.LogError("Flashlight prefab could not be instantiated!");
+            return;
+        }
 
         // Set the position and rotation
         flashlight.transform.position = (Vector2)transform.position + lastDirection * flashOffset;
@@ -54,8 +63,17 @@ public class Flashlight : MonoBehaviour
         // Scale the beam length and width
         flashlight.transform.localScale = new Vector3(beamLength, beamWidth, flashlight.transform.localScale.z);
 
+        // Ensure the flashlight collider is a trigger
+        BoxCollider2D collider = flashlight.GetComponent<BoxCollider2D>();
+        if (collider != null)
+        {
+            collider.isTrigger = true;
+        }
+
         // Destroy the flashlight after the duration
         Destroy(flashlight, flashDuration);
+
+        Debug.Log("Flashlight fired in direction: " + lastDirection);
 
         // Check for ghosts hit by the flashlight's collider
         Collider2D[] hitColliders = Physics2D.OverlapBoxAll(
@@ -68,16 +86,22 @@ public class Flashlight : MonoBehaviour
         {
             if (hit.CompareTag("Ghost"))
             {
+                Debug.Log("Ghost detected: " + hit.name);
+
                 GhostController ghost = hit.GetComponent<GhostController>();
                 if (ghost != null)
                 {
-                    ghost.FadeAndDestroy(); // Fade and destroy the ghost
+                    Debug.Log("Fading and destroying ghost: " + hit.name);
+                    ghost.FadeAndDestroy();
                 }
                 else
                 {
-                    Destroy(hit.gameObject); // Fallback: destroy the ghost
+                    Debug.LogWarning("GhostController not found on ghost: " + hit.name);
+                    Destroy(hit.gameObject);
                 }
-                FindObjectOfType<GameManager>().GhostDefeated(); // Notify GameManager
+
+                // Notify GameManager
+                FindObjectOfType<GameManager>().GhostDefeated();
             }
         }
     }

@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections; // Required for IEnumerator
+using System.Collections;
 
 public class GhostController : MonoBehaviour
 {
