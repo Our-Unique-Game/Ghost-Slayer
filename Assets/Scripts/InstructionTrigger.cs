@@ -22,7 +22,7 @@ public class InstructionTrigger : MonoBehaviour
     private void Awake()
     {
         // Find the player's Movement script
-        playerMovement = FindObjectOfType<Movement>();
+        playerMovement = FindFirstObjectByType<Movement>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

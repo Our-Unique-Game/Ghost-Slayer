@@ -36,7 +36,7 @@ public class ExplodeMechanic : MonoBehaviour
                 Destroy(hit.gameObject);
 
                 // Notify GameManager
-                FindObjectOfType<GameManager>().GhostDefeated();
+                FindFirstObjectByType<GameManager>().GhostDefeated();
                 Debug.Log($"Ghost destroyed: {hit.name}");
             }
         }

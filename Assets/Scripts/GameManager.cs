@@ -33,6 +33,6 @@ public class GameManager : MonoBehaviour
         winMessage.SetActive(true);
 
         // Optionally, stop the player from moving
-        FindObjectOfType<Movement>().CanMove = false;
+        FindFirstObjectByType<Movement>().CanMove = false;
     }
 }
