@@ -3,7 +3,7 @@ using UnityEngine;
 public class TeleportHandler : MonoBehaviour
 {
     [Header("Teleport Settings")]
-    public GameObject destination; // Destination object (target door/ladder)
+    [SerializeField] private GameObject destination; // Destination object (target door/ladder)
 
     private bool isPlayerInRange = false; // Tracks if the player is near this object
 
@@ -35,20 +35,20 @@ public class TeleportHandler : MonoBehaviour
     {
         if (destination != null)
         {
-            // Get the destination's SpriteRenderer center
-            SpriteRenderer spriteRenderer = destination.GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null)
+            // Teleport player to destination
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
             {
                 // Get the center of the destination's sprite bounds
-                Vector3 centerPosition = spriteRenderer.bounds.center;
+                SpriteRenderer spriteRenderer = destination.GetComponent<SpriteRenderer>();
+                Vector3 targetPosition = spriteRenderer != null ? spriteRenderer.bounds.center : destination.transform.position;
 
-                // Teleport the player to the center position
-                GameObject player = GameObject.FindWithTag("Player");
-                player.transform.position = centerPosition;
+                // Move the player
+                player.transform.position = targetPosition;
             }
             else
             {
-                Debug.LogWarning("Destination does not have a SpriteRenderer: " + destination.name);
+                Debug.LogWarning("Player object not found!");
             }
         }
         else

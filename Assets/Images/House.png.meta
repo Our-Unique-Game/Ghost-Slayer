@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6befa0df4f12042cb96446e287ecc325
+guid: e18ddf6b41ee047ccb0bdb2fec9d9dcc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3475843412487586577
-    second: kidRight 2_0
+      213: -7411974349392773033
+    second: House_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kidRight 2_0
+      name: House_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 38
-        width: 315
-        height: 570
+        x: 89
+        y: 89
+        width: 391
+        height: 257
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fecbbc705d253cfc0800000000000000
-      internalID: -3475843412487586577
+      spriteID: 750032c7990632990800000000000000
+      internalID: -7411974349392773033
       vertices: []
       indices: 
       edges: []
