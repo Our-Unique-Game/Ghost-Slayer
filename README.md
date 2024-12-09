@@ -1,15 +1,15 @@
-# School Escape
+# Ghost Slayer
 
 **Description:**  
-In *School Escape*, you are a student trapped in school, navigating through classrooms to find a way home. You’ll encounter classmates in each room who have puzzles to solve in subjects like math, English, and programming. By solving these, you’ll gather pieces of a key to unlock the principal’s office and, ultimately, the school gate to escape.
+In *Ghost Slayer*, you find yourself in a haunted village where the only way to survive is by lighting up each house. Enter the darkened homes, search for hidden light switches, and fend off ghostly attacks with brief stun abilities. Activate all lights to cleanse the village of spirits.
 
 **Platform:**  
 PC (Unity)
 
 **Gameplay Features:**
-- Explore six classrooms, each featuring different subject-based puzzles.
-- Interact with classmates for clues and puzzle-solving.
-- Use the completed key to unlock the school gate and make your escape.
-- Set difficulty level: Easy, Medium, Hard, and Extreme.
+- Explore each haunted house, searching for light switches hidden in various locations.
+- Stun ghosts temporarily as they attempt to attack.
+- Light up all areas to succeed in driving out the ghosts and restoring safety to the village.
+- Manage limited health and resources carefully.
 
-For a full breakdown of the game’s mechanics and structure, see the [Formal Elements](Formal-elements.md).
+For an in-depth look at gameplay elements and design, check the [Formal Elements](Formal-elements.md).
