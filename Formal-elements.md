@@ -1,81 +1,58 @@
-# Main Title: Game Name
-
-**tagline:** Get through school to find your way to escape home!
-
-## Game Essence
-
-The player, stuck in school, must find a way to escape. They interact with other students in different classrooms, solving exercises in math, English, and programming to assemble pieces of a key to the principal’s office. Once inside, they can grab the school gate key to finally escape.
-
-Platform: PC (Unity)
-
-<img title="a title" alt="Alt text" src="/images/game-cover.png">
+# Ghost Slayer  
+**Tagline:** *"Light up the darkness, defeat the ghosts!"*  
 
 ---
 
-## Formal Components
+## **Game Essence**  
+Players roam through a haunted village, entering houses to find hidden light switches to ward off ghosts. They must survive by temporarily stunning attacking spirits until all lights are activated.
 
-Use screenshots to illustrate your answers.
-
-### 1. Players
-
-* Target Audience: Ages 10+ with an interest in puzzle-solving games.
-* Number of Players: Single-player.
-* Interaction Patterns: Player versus environment; interaction with in-game characters.
-
-
-### 2. Goals
-
-* Primary Goal: Assemble the complete key by solving puzzles and unlock the school gate.
-* Goal Communication: Objectives are outlined in initial instructions and reinforced by hints from classmates.
-
-
-### 3. Processes
-
-* Game Start: The player is introduced to their situation (trapped in school) and receives basic movement and interaction instructions.
-* Core Gameplay: Move through classrooms, solve puzzles to gain key pieces, and reach the principal’s office.
-* Game End: Escape successfully by unlocking the gate, or lose if caught without the completed key.
-
-
-### 4. Rules
-
-* Must solve puzzles to receive key pieces.
-* Certain hallways with security checks must be avoided.
-* the game will start with an intro that explain the rules of the games.
-
-
-### 5. Resources
-
-* Key Pieces: Gathered by solving puzzles.
-* Hints: Available from classmates when needed.
-* the player will have a bar of the part he collected in precentage.
-
-### 6. Conflicts
-
-* Main Challenge: Solving subject-based puzzles, avoiding detection, and completing objectives in sequence.
-
-
-### 7. Boundaries
-
-* Game Boundaries: Limited to the school environment with each classroom presenting subject-specific puzzles.
-* the player wont be able to exit the school until he finish the game
-
-
-### 8. Outcomes
-
-* Success is escaping the school, while failure occurs if caught or unable to solve puzzles.
-* also needed talent to finish but no luck.
+**Platform:** PC (Unity)  
 
 ---
 
-## Market Research
+## **Formal Components**
 
-the closest games we found are:
-* School Escape!
-* School Days
-* Escape from School - 100 Doors
-* Stickman School Escape 2
+### **Players**  
+- **Target Audience:** Ages 12+ interested in casual horror and adventure games.  
+- **Number of Players:** Single-player.  
+- **Interaction Patterns:** Player versus environment.
 
+### **Goals**  
+- **Primary Goal:** Activate lights in each house to drive away ghosts.  
+- **Goal Communication:** The goal is introduced at the start and reiterated upon entering houses.
 
-we search not only with simillar name to our game but also simillar patterns and rules of our game. 
-those games has a simillar to out game but our game is diffrent while we use educational features like math, english and even programing to young age.
-the players will prefer our game because it not only educational but also very funny and thrilling while we have to steal princple key and escape the school.
+### **Processes**  
+1. **Game Start:** Player receives an objective to light up houses and a quick tutorial on interactions.  
+2. **Core Gameplay:**  
+   - Search for light switches.  
+   - Avoid or temporarily stun ghosts.  
+   - Light up all areas in each house.  
+3. **Game End:**  
+   - **Win:** Activate lights in all houses.  
+   - **Lose:** Health reaches zero.
+
+### **Rules**  
+- Ghosts can only be temporarily stunned but not defeated.  
+- All rooms in a house must have their lights activated.  
+
+### **Resources**  
+- **Health:** Decreases when attacked; partially recoverable through collectible items.  
+- **Stun Power:** Limited but replenishes gradually over time.
+
+### **Conflicts**  
+- **Main Challenge:**  
+   - Survive ghost attacks while searching for switches.  
+   - Manage limited stun power effectively.
+
+### **Boundaries**  
+- **Game Boundaries:**  
+   - Movement is restricted to the haunted village.  
+   - Each house contains unique layouts and challenges.
+
+### **Outcomes**  
+- **Success:** Activate lights in all houses.  
+- **Failure:** Health is depleted.
+
+---
+
+**Get ready to light up the darkness and face the ghosts in Ghost Slayer!**
