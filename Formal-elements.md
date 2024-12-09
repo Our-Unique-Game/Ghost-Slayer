@@ -55,4 +55,16 @@ Players roam through a haunted village, entering houses to find hidden light swi
 
 ---
 
+## **Market Research**
+
+The closest games we found are:
+
+1. **Ghost Invasion: Idle Hunter**
+2. **Haunted Castle - Ghost Game**
+3. **Granny**
+
+We researched games with similar themes and mechanics to ensure our game stands out. These games provide inspiration in terms of horror settings and gameplay loops, but *Ghost Slayer* differentiates itself by focusing on strategy and environmental exploration with its unique lighting mechanic makes the game more challanging.
+
+--- 
+
 **Get ready to light up the darkness and face the ghosts in Ghost Slayer!**
