@@ -3,34 +3,38 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float speed = 5f;
-    private Animator animator;
     private Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        // Get input for horizontal and vertical movement
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
+        // Get movement input
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
 
-        // Move the player
-        rb.linearVelocity = new Vector2(moveX * speed, moveY * speed);
+        // Normalize movement to prevent faster diagonal movement
+        Vector2 movement = new Vector2(moveX, moveY).normalized;
+
+        // Apply movement
+        rb.linearVelocity = movement * speed;
 
         // Update Animator parameters
-        animator.SetFloat("Speed", Mathf.Abs(moveX) + Mathf.Abs(moveY)); // Speed parameter for transitions
-        animator.SetFloat("Horizontal", moveX); // Direction on X-axis
-        animator.SetFloat("Vertical", moveY);   // Direction on Y-axis
+        animator.SetFloat("Speed", rb.linearVelocity.magnitude); // Overall speed
+        animator.SetFloat("Horizontal", movement.x);       // Horizontal direction
+        animator.SetFloat("Vertical", movement.y);         // Vertical direction
 
-        // Set player facing direction (idle direction based on last movement)
-        if (moveX != 0 || moveY != 0)
-        {
-            animator.SetFloat("LastMoveX", moveX);
-            animator.SetFloat("LastMoveY", moveY);
-        }
+        // Flip sprite for leftward movement
+        if (movement.x > 0)
+            spriteRenderer.flipX = false; // Face right
+        else if (movement.x < 0)
+            spriteRenderer.flipX = true; // Face left
     }
 }
