@@ -12227,11 +12227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ebddedc87a68400e8252409077fd951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashlightPrefab: {fileID: 5475262033060090193, guid: 876c87a72d58d4ccd9b785c22c1e30ae, type: 3}
-  flashDuration: 0.5
-  flashOffset: 1
-  beamLength: 1.5
-  beamWidth: 5
+  explosionEffectPrefab: {fileID: 8322858946287941511, guid: c0903fc5eedec4fcca70fbaa41e174d2, type: 3}
+  explosionRadius: 2
 --- !u!1001 &1778125017
 PrefabInstance:
   m_ObjectHideFlags: 0
