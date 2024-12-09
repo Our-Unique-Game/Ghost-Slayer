@@ -20,21 +20,25 @@ public class Movement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        // Normalize movement to prevent faster diagonal movement
+        // Normalize movement to avoid faster diagonal speed
         Vector2 movement = new Vector2(moveX, moveY).normalized;
 
-        // Apply movement
+        // Apply movement to Rigidbody
         rb.linearVelocity = movement * speed;
 
         // Update Animator parameters
-        animator.SetFloat("Speed", rb.linearVelocity.magnitude); // Overall speed
-        animator.SetFloat("Horizontal", movement.x);       // Horizontal direction
-        animator.SetFloat("Vertical", movement.y);         // Vertical direction
+        animator.SetFloat("Speed", rb.linearVelocity.magnitude);
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
 
-        // Flip sprite for leftward movement
+        // Handle sprite flipping for left movement
         if (movement.x > 0)
+        {
             spriteRenderer.flipX = false; // Face right
+        }
         else if (movement.x < 0)
+        {
             spriteRenderer.flipX = true; // Face left
+        }
     }
 }
