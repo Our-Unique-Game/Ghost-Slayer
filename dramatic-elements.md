@@ -73,7 +73,10 @@
 - **Climax**:  
    - The player faces the strongest ghost in the final, most challenging house.  
 - **Resolution**:  
-   - Success triggers celebration in the village, reducing tension and giving the player a sense of victory.
+   - Success triggers celebration in the village, reducing tension and giving the player a sense of victory.  
+
+**Visual Representation**:  
+![Dramatic Arc Graph](images/graph7.png)  
 
 ## 8. **World-Building**  
 - **Setting**:  
@@ -89,5 +92,3 @@
    - Example: glowing ghost effects, ambient whispers, and flickering lights create immersion.
 
 ---
-
-This refined document ensures clarity, professionalism, and a solid plan for building out the **Ghost Slayer** game. Each section is well-detailed to provide a strong foundation for future development while expanding on your original ideas.
