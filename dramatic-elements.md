@@ -3,7 +3,7 @@
 ## 1. **Challenge**  
 - **Core Mechanics:**  
    - Design mechanics that challenge the player’s coordination, speed, and reflexes. Examples include:  
-     - **Parkour Elements**: Navigating rooftops, jumping over obstacles.  
+     - **Parkour Elements**: jumping over obstacles.  
      - **Puzzle Solving**: Finding hidden switches or items in haunted houses.  
      - **Combat Strategy**: Identifying ghost weaknesses and using upgrades effectively.  
    - Difficulty will scale dynamically:  
@@ -27,7 +27,6 @@
      - Clearing out hidden spirits for small rewards.  
    - Tailored for player types:  
      - **Achievers**: Progress to harder levels and unlock upgrades.  
-     - **Collectors**: Explore hidden areas and collect unique items.  
      - **Explorers**: A detailed world design with explorable nooks, secrets, and lore.
 
 ## 4. **Emotion**  
