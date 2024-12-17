@@ -3,6 +3,11 @@
 
 ---
 
+## **Game Cover**  
+![Game Cover](images/game-cover.png)  
+
+---
+
 ## **Game Essence**  
 Players roam through a haunted village, entering houses to find hidden light switches to ward off ghosts. They must survive by temporarily stunning attacking spirits until all lights are activated.
 
