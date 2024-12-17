@@ -4,7 +4,9 @@
 ---
 
 ## **Game Cover**  
-![Game Cover](images/game-cover.png)  
+<p align="center">
+  <img src="images/game-cover.png" alt="Game Cover" width="256" height="256">
+</p> 
 
 ---
 
