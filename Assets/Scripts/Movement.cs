@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 5f; // Movement speed
-    public bool CanMove = true; // Controls whether the player can move (useful for interactions)
+    [SerializeField] public float speed = 5f; // Movement speed
+    [SerializeField] public bool CanMove = true; // Controls whether the player can move (useful for interactions)
 
-    public float HorizontalInput { get; private set; } // Tracks horizontal movement input
-    public float VerticalInput { get; private set; } // Tracks vertical movement input
+    [SerializeField] public float HorizontalInput { get; private set; } // Tracks horizontal movement input
+    [SerializeField] public float VerticalInput { get; private set; } // Tracks vertical movement input
 
-    private Rigidbody2D rb;
-    private Animator animator;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     void Start()
     {

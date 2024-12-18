@@ -7,8 +7,8 @@ public class RobberManager : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints; // Array of spawn points
     [SerializeField] private float killDistance = 2f; // Distance required to kill a robber
 
-    private GameObject currentRobber; // Reference to the currently active robber
-    private int score = 0; // Player's score
+    [SerializeField] private GameObject currentRobber; // Reference to the currently active robber
+    [SerializeField] private int score = 0; // Player's score
 
     private void Start()
     {

@@ -4,8 +4,7 @@ public class TeleportHandler : MonoBehaviour
 {
     [Header("Teleport Settings")]
     [SerializeField] private GameObject destination; // Destination object (target door/ladder)
-
-    private bool isPlayerInRange = false; // Tracks if the player is near this object
+    [SerializeField] private bool isPlayerInRange = false; // Tracks if the player is near this object
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

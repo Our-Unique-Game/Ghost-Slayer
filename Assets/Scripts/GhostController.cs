@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GhostController : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     void Start()
     {
