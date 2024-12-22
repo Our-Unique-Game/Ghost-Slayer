@@ -4,10 +4,10 @@ using UnityEngine;
 public class Oscillator : MonoBehaviour
 {
     [SerializeField, Tooltip("Distance to oscillate (in meters)")]
-    [SerializeField] private float m_Amplitude = 10.0f; // Increase this value to extend the oscillation range
+    private float m_Amplitude = 10.0f; // Increase this value to extend the oscillation range
 
     [SerializeField, Tooltip("Time to complete one oscillation (in seconds)")]
-    [SerializeField] private float m_Period = 2.0f; // Time it takes for one full up-down oscillation
+    private float m_Period = 2.0f; // Time it takes for one full up-down oscillation
 
     [SerializeField] private Vector3 m_StartPosition;
 
