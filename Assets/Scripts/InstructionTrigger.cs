@@ -11,11 +11,12 @@ public class InstructionTrigger : MonoBehaviour
 
     [Header("UI Elements")]
     [SerializeField] private GameObject instructionPanel; // Reference to the UI panel
-    [SerializeField] private TMP_Text instructionTextUI; // Reference to the TextMeshPro Text element
-    [SerializeField] private Button okButton; // "OK" button to dismiss the instructions
+
+    private TMP_Text instructionTextUI;  // Auto-find the text
+    private Button okButton;             // Auto-find the button
 
     private bool instructionShown = false; // Tracks if the instruction has already been shown
-    private Movement playerMovement; // Reference to the player's movement script
+    private Movement playerMovement;      // Reference to the player's movement script
 
     private Coroutine autoCloseCoroutine; // To handle auto-closing
 
@@ -23,6 +24,10 @@ public class InstructionTrigger : MonoBehaviour
     {
         // Find the player's Movement script
         playerMovement = FindFirstObjectByType<Movement>();
+
+        // Auto-find components inside the panel
+        instructionTextUI = instructionPanel.GetComponentInChildren<TMP_Text>(); // Finds TextMeshPro
+        okButton = instructionPanel.GetComponentInChildren<Button>();            // Finds the Button
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,6 +36,15 @@ public class InstructionTrigger : MonoBehaviour
         if (collision.CompareTag("Player") && !instructionShown)
         {
             ShowInstruction();
+        }
+    }
+
+    private void Update()
+    {
+        // Close the instruction panel if Space is pressed
+        if (instructionPanel.activeSelf && Input.GetKeyDown(KeyCode.Space))
+        {
+            CloseInstruction();
         }
     }
 
@@ -47,6 +61,7 @@ public class InstructionTrigger : MonoBehaviour
         instructionTextUI.text = instructionText;
 
         // Add a listener to the OK button
+        okButton.onClick.RemoveAllListeners(); // Prevent duplicate listeners
         okButton.onClick.AddListener(CloseInstruction);
 
         // Start the auto-close coroutine
@@ -64,6 +79,9 @@ public class InstructionTrigger : MonoBehaviour
 
     private void CloseInstruction()
     {
+        // Debug log to ensure the function is called
+        Debug.Log("CloseInstruction called!");
+
         // If auto-close is running, stop it
         if (autoCloseCoroutine != null)
         {
@@ -81,7 +99,7 @@ public class InstructionTrigger : MonoBehaviour
         if (playerMovement != null)
             playerMovement.CanMove = true;
 
-        // Remove the listener to avoid duplicate calls
-        okButton.onClick.RemoveListener(CloseInstruction);
+        // Clear all button listeners to avoid duplicates
+        okButton.onClick.RemoveAllListeners(); // Fixed
     }
 }
