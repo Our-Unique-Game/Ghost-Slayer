@@ -17,7 +17,7 @@ public class Oscillator : MonoBehaviour
     {
         // Record the starting position of the object
         m_StartPosition = transform.position;
-        
+
         // Store the time at the start of the oscillation
         m_StartTime = Time.time;
     }
