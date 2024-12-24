@@ -1,5 +1,8 @@
 # Ghost Slayer
 
+Link to Latest game:
+https://gman17.itch.io/ghost-slayer-21d
+
 **Description:**  
 In *Ghost Slayer*, you find yourself in a haunted village where the only way to survive is by lighting up each house. Enter the darkened homes, search for hidden light switches, and fend off ghostly attacks with brief stun abilities. Activate all lights to cleanse the village of spirits.
 

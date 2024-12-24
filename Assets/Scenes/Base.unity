@@ -2154,7 +2154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cf4513a675844e9817128cef1a5b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalGhosts: 10
+  totalGhosts: 8
   winMessage: {fileID: 1544710675}
 --- !u!4 &216593066
 Transform:
@@ -28837,7 +28837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ff7d82db3ac4e78860f1b2ea2cf428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 7
   CanMove: 1
 --- !u!70 &1778029751
 CapsuleCollider2D:
