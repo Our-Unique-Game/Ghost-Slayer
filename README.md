@@ -15,4 +15,7 @@ PC (Unity)
 - Light up all areas to succeed in driving out the ghosts and restoring safety to the village.
 - Manage limited health and resources carefully.
 
+
 For an in-depth look at gameplay elements and design, check the [Formal Elements](Formal-elements.md).
+
+For an analysis of dramatic elements and narrative, check the [Dramatic Elements](Dramatic-elements.md).
